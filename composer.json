@@ -20,7 +20,8 @@
     "slim/views": "0.*",
     "propel/propel": "~2.0@dev",
     "twig/twig": "1.*",
-    "ircmaxell/password-compat": "dev-master"
+    "ircmaxell/password-compat": "dev-master",
+    "maximebf/debugbar": ">=1.0.0"
   },
   "autoload": {
     "classmap": [

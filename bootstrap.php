@@ -11,6 +11,7 @@ date_default_timezone_set('Asia/Dhaka');
 session_start();
 
 require APP_DIR.'vendor/autoload.php';
+//Propel::init('../propel/propel.xml');
 
 // Load the configuration file
 $configManager = new ConfigurationManager( '../propel/propel.xml' );
@@ -32,6 +33,7 @@ $serviceContainer->setDefaultDatasource('default');
 $app = new \Slim\Slim(array(
     'templates.path' => APP_DIR.'templates',
 ));
+//$debugbar->addCollector(new DebugBar\Bridge\SlimCollector($app));
 
 // Create monolog logger and store logger in container as singleton
 // (Singleton resources retrieve the same log resource definition each time)

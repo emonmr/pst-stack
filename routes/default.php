@@ -2,6 +2,7 @@
 
 // Define routes
 $app->get('/', 'requireLogin', function () use ($app) {
+//    $debugbar->addCollector(new DebugBar\Bridge\SlimCollector($app));
 
     $user = App::getUser()->toArray();
 
