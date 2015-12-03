@@ -1,4 +1,5 @@
 <?php
+
 // Define routes
 $app->get('/', 'requireLogin', function () use ($app) {
 
@@ -10,8 +11,7 @@ $app->get('/', 'requireLogin', function () use ($app) {
 
 $app->get('/login', function () use ($app) {
 
-    $user = UserQuery::create()
-        ->find();
+   // $user = UserQuery::create()->find();
 
     $app->log->info("Slim-Skeleton '/' route");
 
@@ -42,6 +42,8 @@ $app->get('/signup', function () use ($app) {
         $app->flash('error', 'You are already logged in');
         $app->redirect('/');
     }
+
+
 
     $app->log->info("Slim-Skeleton '/' route");
 
