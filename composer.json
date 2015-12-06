@@ -20,7 +20,7 @@
     "slim/views": "0.*",
     "twig/twig": "1.*",
     "ircmaxell/password-compat": "dev-master",
-    "maximebf/debugbar": ">=1.0.0",
+    "maximebf/debugbar": "1.*",
     "propel/propel": "~2.0@dev"
 
   },
