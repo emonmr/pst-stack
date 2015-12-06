@@ -18,10 +18,11 @@
     "monolog/monolog": "1.*",
     "slim/slim": "2.*",
     "slim/views": "0.*",
-    "propel/propel": "~2.0@dev",
     "twig/twig": "1.*",
     "ircmaxell/password-compat": "dev-master",
-    "maximebf/debugbar": ">=1.0.0"
+    "maximebf/debugbar": ">=1.0.0",
+    "propel/propel": "~2.0@dev"
+
   },
   "autoload": {
     "classmap": [
